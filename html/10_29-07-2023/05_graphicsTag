@@ -1,0 +1,7 @@
+there are 2 graphics tag.
+
+(1) svg  (scalable vector graphics)
+(2) canvas = javascript code 
+
+these both provide 2D graphics.
+svg = circle, rectangle, polygon, text
