@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .masking {
+            height: 400px;
+            width: 400px;
+            mask-image: url(masking.png);
+            mask-repeat: no-repeat;
+            mask-size: cover;
+            mask-position: center;
+
+            -webkit-mask-image: url(masking.png);
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: cover;
+            -webkit-mask-position: center;
+        }
+
+        img {
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="masking">
+        <img src="img.jpg" alt="">
+    </div>
+</body>
+
+</html>
