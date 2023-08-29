@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .FlexExample .flex-m {
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+
+        .FlexExample .flex-p {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .FlexExample .flexbox {
+            display: flex;
+            background-color: #191818;
+        }
+
+        .FlexExample .contentimg {
+            flex: 1;
+        }
+
+        .FlexExample .contentimg img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .FlexExample .content {
+            flex: 1;
+            padding: 40px;
+            color: white;
+        }
+
+        .FlexExample .content h1 {
+            padding-bottom: 10px;
+            font-size: 35px;
+            font-family: 'Pacifico', cursive;
+        }
+
+        .FlexExample .content h3 {
+            padding-bottom: 10px;
+            font-size: 22px;
+            font-family: 'Satisfy', cursive;
+            font-weight: 100;
+        }
+
+        .FlexExample .content p {
+            font-size: 17px;
+            letter-spacing: 1px;
+            padding-bottom: 10px;
+        }
+
+        .FlexExample .content button {
+            color: white;
+            background-color: #191818;
+            border: 2px solid white;
+            font-size: 17px;
+            height: 40px;
+            padding: 0px 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="FlexExample">
+        <div class="flex-m">
+            <div class="flex-p">
+                <div class="flexbox">
+                    <div class="contentimg">
+                        <img src="about.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h1>Welcome To Spicy Bite</h1>
+                        <h3>Feel the flavour, feel the aroma, feel the taste in every bite.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aliquid quae porro, quasi
+                            quo dolores obcaecati? Eveniet quo sit amet non doloremque sapiente laborum quis hic
+                            officiis ratione! Sit, voluptatibus?</p>
+                        <button class="readmore">Find Out More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
