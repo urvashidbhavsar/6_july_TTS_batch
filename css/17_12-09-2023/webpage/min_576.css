@@ -1,0 +1,14 @@
+@media (min-width:576px) {
+    .container {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    header .navbar .nav {
+        display: none;
+    }
+
+    header .navbar .bars {
+        display: block;
+    }
+}

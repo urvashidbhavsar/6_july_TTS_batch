@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ========= common css ====== */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/* ============== header ============== */
+header {
+    background-color: #103838;
+}
+
+header .header-p {
+    padding: 15px 0px;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar .logo h1 {
+    color: white;
+}
+
+header .navbar .logo span {
+    color: #ff5b83;
+    font-weight: 300;
+}
+
+header .navbar .nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+header .navbar .nav ul li {
+    padding: 5px;
+}
+
+header .navbar .nav ul a {
+    color: white;
+}
+
+header .navbar .nav ul a:hover {
+    color: #ff5b83;
+}
+
+header .navbar .nav ul a:hover span {
+    color: #ff5b83;
+}
+
+header .navbar .nav ul span {
+    color: white;
+    font-size: 12px;
+}
+
+header .navbar .bars {
+    display: none;
+}
+
+header .navbar .resbtn span {
+    font-size: 21px;
+    color: white;
+}
