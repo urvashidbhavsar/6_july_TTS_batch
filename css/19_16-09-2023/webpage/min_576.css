@@ -1,0 +1,53 @@
+@media (min-width:576px) {
+    .container {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    header .navbar .nav {
+        display: none;
+    }
+
+    header .navbar .bars {
+        display: block;
+    }
+
+    /* ======== homepage ========  */
+    .homepage .hometext {
+        width: 100%;
+    }
+
+    .homepage .hometext h1 {
+        font-size: 35px;
+    }
+
+    .homepage .homepage-p {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    /* =======exp section ======= */
+    .experience .main-exp-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience .main-exp-div .exp-person {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .experience .main-exp-div .exp-details h1 {
+        font-size: 25px;
+    }
+
+    /* ============== design section =========== */
+    .designSec .designBox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .designSec .title p {
+        width: unset;
+    }
+}
