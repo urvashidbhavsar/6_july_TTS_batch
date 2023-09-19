@@ -1,0 +1,38 @@
+@media (min-width:576px) {
+    .container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    /* header inherit value from min width 576px */
+    /* ======== homepage ========  */
+    .homepage .hometext {
+        width: 100%;
+    }
+
+    .homepage .hometext h1 {
+        font-size: 45px;
+    }
+
+    .homepage .homepage-p {
+        padding-top: 150px;
+        padding-bottom: 70px;
+    }
+
+    /* === exp section inherit from min width 576px === */
+
+    /* offer */
+    .offerSec .offerFlex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .offerSec .title p {
+        width: unset;
+
+    }
+
+    .offerSec .offerFlex .offerSer h1 {
+        font-size: 27px;
+    }
+}
