@@ -1,0 +1,33 @@
+@media (min-width:1200px) {
+    .container {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    /* == homepage== */
+    .homepage .hometext h1 {
+        font-size: 55px;
+    }
+
+    /* =======exp section ======= */
+    .experience .main-exp-div .exp-details h1 {
+        font-size: 35px;
+    }
+
+    .offerSec .offerFlex .offerSer h1 {
+        font-size: 35px;
+    }
+
+    /* === blog section === */
+    .blogsec .GridBlog {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .blogsec .GridBlog .box3 {
+        grid-row: unset;
+        grid-column: unset;
+        width: unset;
+        justify-self: unset;
+    }
+}
