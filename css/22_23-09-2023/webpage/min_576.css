@@ -1,0 +1,98 @@
+@media (min-width:576px) {
+    .container {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    header .navbar .nav {
+        display: none;
+    }
+
+    header .navbar .bars {
+        display: block;
+    }
+
+    /* ======== homepage ========  */
+    .homepage .hometext {
+        width: 100%;
+    }
+
+    .homepage .hometext h1 {
+        font-size: 35px;
+    }
+
+    .homepage .homepage-p {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    /* =======exp section ======= */
+    .experience .main-exp-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience .main-exp-div .exp-person {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .experience .main-exp-div .exp-details h1 {
+        font-size: 25px;
+    }
+
+    /* ============== design section =========== */
+    .designSec .designBox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .designSec .title p {
+        width: unset;
+    }
+
+    /* offer */
+    .offerSec .offerFlex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .offerSec .title p {
+        width: unset;
+
+    }
+
+    .offerSec .offerFlex .offerSer h1 {
+        font-size: 22px;
+    }
+
+    .offerSec .offerFlex .offergrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* === blog section === */
+    .blogsec .GridBlog {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blogsec .title h1 {
+        font-size: 30px;
+    }
+
+    .blogsec .title p {
+        width: 100%;
+    }
+
+    /* ========== footer ========= */
+    .footer .footerGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer .copy {
+        display: flex;
+        flex-direction: column;
+    }
+}
