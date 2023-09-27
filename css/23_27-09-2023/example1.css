@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.services{
+    background:url(https://www.seiu1000.org/sites/main/files/main-images/camera_lense_0.jpeg) no-repeat center yellowgreen ;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    clip-path:  polygon(-305% 0%, 50% 100%, 405% 0%);
+}
+.services::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.322);
+    z-index: -1;
+}
+.services .services-m{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.services .serp{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.services .ServiceBox{
+    display: flex;
+    align-items: center;
+    gap:60px
+}
+.services .ServiceBox .servicesText{
+    flex: 1;
+}
+.services .ServiceBox .serviceInfo{
+    flex: 1.5;
+}
+.services .ServiceBox .serviceInfo .gridBox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.services .ServiceBox .serviceInfo .box{
+    padding:30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    /* box-shadow: 0px 3px 5px 0px white; */
+}
+.services .ServiceBox .serviceInfo .box span{
+    font-size: 30px;
+}
+.services .ServiceBox .serviceInfo .box h5{
+    font-size: 20px;
+    padding-top: 20px;
+}
+/* merge */
+.services .ServiceBox .serviceInfo .box1{
+    grid-row: 1 / span 3;
+    height: 77px;
+    align-self: center;
+}
+.services .ServiceBox .serviceInfo .box2{
+    height: 77px;
+    transform: translateY(70px);
+}
+.services .ServiceBox .serviceInfo .box4{
+    grid-row: 2 /span 2;
+    grid-column: 2;
+    height: 77px;
+    transform: translateY(70px);
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(76, 4, 4);
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    left: 48%;
+    top: -10px;
+    z-index: 4;
+}
+.point{
+    width: 100%;
+    position: relative;
+}
