@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #msg {
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- onkeydown="myMsg()" 
+        onkeypress="myMsg()"
+    -->
+    Enter Any value : <input type="text" id="user" onkeyup="myMsg()">
+    <p>You Entered : <span id="msg"></span> </p>
+
+    <script>
+        function myMsg() {
+            var inp = document.getElementById("user").value;
+            document.getElementById("msg").innerHTML = inp
+        }
+    </script>
+</body>
+
+</html>
