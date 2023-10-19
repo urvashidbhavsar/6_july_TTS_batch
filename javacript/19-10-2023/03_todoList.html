@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" name="" id="addval">
+        <button onclick="addList()">add in list</button>
+    </div>
+    <ol></ol>
+    <!-- program to add list dynamically -->
+    <!-- append used when you want replace string -->
+    <script>
+        function addList() {
+            let list = document.createElement("li")
+            let listText = document.getElementById("addval").value;
+            list.append(listText);
+            document.querySelector("ol").append(list);
+            document.getElementById("addval").value = ""
+        }
+    </script>
+</body>
+
+</html>

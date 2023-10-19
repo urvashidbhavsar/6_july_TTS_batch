@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .count {
+            height: 200px;
+            width: 200px;
+            background-color: teal;
+            font-size: 40px;
+            display: grid;
+            place-content: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="count"></div>
+
+    <script>
+        // setInterval() => set perform task duration/time
+        // clearInterval() => help to stop setInterval()
+        let start = 1000;
+        let counts = setInterval(function () {
+            let num = document.querySelector(".count");
+            num.innerHTML = ++start;
+            if (start == 2000) {
+                clearInterval(counts)
+            }
+        }, 100)
+    </script>
+</body>
+
+</html>
