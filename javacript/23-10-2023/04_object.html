@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- object has a key pair value -->
+    <script>
+        let person = {
+            firstname: "urvashi",
+            lastname: "bhavsar",
+            mobileno: 7405268956,
+            dateofJoin: "23-10-2023",
+        }
+        console.log(person);
+        // document.write(person)
+        console.log(person.firstname + " " + person.lastname);
+
+        // to print object value
+        let per;
+        for (per in person) {
+            console.log(per + " => " + person[per]);
+        }
+    </script>
+</body>
+
+</html>
