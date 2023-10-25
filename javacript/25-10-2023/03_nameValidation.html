@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="" action="">
+        <label for="">Enter name</label>
+        <input type="text" name="uname" id="username" onblur="return checkName()" onkeyup="return nameEx()">
+        <span id="msg"></span>
+        <div>
+            <button onclick="return checkName()" type="submit">click</button>
+        </div>
+    </form>
+
+    <script>
+        function checkName() {
+            var user = document.getElementById("username").value;
+            if (user == "" || user == null) {
+                document.getElementById("msg").innerText = "Enter name";
+                return false;
+            }
+        }
+        function nameEx() {
+            var user = document.getElementById("username").value;
+            var nameregEx = /^[a-zA-Z]*$/
+            if (!(user.match(nameregEx))) {
+                document.getElementById("msg").innerText = "enter proper name"
+            } else if (user.length < 2) {
+                document.getElementById("msg").innerText = "name has atleast 2 words"
+            }else {
+                document.getElementById("msg").innerText = ""
+            }
+        }
+    </script>
+</body>
+
+</html>
