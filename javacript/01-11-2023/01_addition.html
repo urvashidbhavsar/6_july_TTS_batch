@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .mydiv {
+            display: flex;
+            gap: 20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <div>Enter 1st value : </div>
+        <div>
+            <input type="text" name="" id="n1">
+        </div>
+    </div>
+    <div class="mydiv">
+        <div>Enter 2nd value : </div>
+        <div>
+            <input type="text" name="" id="n2">
+        </div>
+    </div>
+    <div class="mydiv">
+        <button onclick="additionVal('n1','n2','res')">Addition</button>
+    </div>
+    <div>
+        <p>Answer is : <b><span id="res"></span></b></p>
+    </div>
+
+    <div class="mydiv">
+        <div>Enter 1st value : </div>
+        <div>
+            <input type="text" name="" id="num1">
+        </div>
+    </div>
+    <div class="mydiv">
+        <div>Enter 2nd value : </div>
+        <div>
+            <input type="text" name="" id="num2">
+        </div>
+    </div>
+    <div class="mydiv">
+        <button onclick="additionVal('num1', 'num2', 'newres')">Addition</button>
+    </div>
+    <div>
+        <p>Answer is : <b><span id="newres"></span></b></p>
+    </div>
+
+    <script>
+        // function additionVal() {
+        //     let num1 = document.getElementById("n1").value;
+        //     let num2 = document.getElementById("n2").value;
+        //     if ((num1 == "" || num1 == null) || (num2 == "" || num2 == null)) {
+        //         alert("Enter value")
+        //     } else {
+        //         let result;
+        //         result = Number(num1) + Number(num2)
+        //         document.getElementById("res").innerHTML = result
+        //     }
+        // }
+
+        function additionVal(num1, num2, res) {
+            let number1 = document.getElementById(num1).value;
+            let number2 = document.getElementById(num2).value;
+            if ((number1 == "" || number1 == null) || (number2 == "" || number2 == null)) {
+                alert("Enter value")
+            } else {
+                let result;
+                result = Number(number1) + Number(number2)
+                document.getElementById(res).innerHTML = result
+            }
+        }
+    </script>
+</body>
+
+</html>
