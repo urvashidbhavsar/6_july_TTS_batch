@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- jquery cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <form action="#">
+        <label for="">Enter any value : </label>
+        <input type="text" name="" id="userval">
+        <br><br>
+        <button id="show">Display</button>
+    </form>
+    <p>You entered : <span id="msg"></span></p>
+
+    <script>
+        $(document).ready(function () {
+            $("#show").click(function () {
+                $inp = $("#userval").val();
+                if ($inp == "") {
+                    alert("Enter value")
+                } else {
+                    // alert($inp)
+                    $("#msg").html("<b>" + $inp + "</b>")
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
