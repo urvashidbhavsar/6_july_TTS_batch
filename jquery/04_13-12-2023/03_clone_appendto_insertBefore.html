@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <button id="btn1">copy & insert before</button>
+    <button id="btn2">copy & insert after</button>
+    <button id="btn3">copy & appendTo</button>
+    <button id="btn4">copy & prepend</button>
+
+    <hr>
+    <p id="p1">Hello User</p>
+    <hr>
+    <b class="b1">welcome</b>
+    <b class="b2">!!!</b>
+    <p id="p2">Hello new user</p>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".b1").clone(true).insertBefore("#p1")
+            })
+            $("#btn2").click(function () {
+                $(".b2").clone(true).insertAfter("#p1")
+            })
+            $("#btn3").click(function () {
+                $(".b2").clone(true).appendTo("#p2")
+            })
+            $("#btn4").click(function () {
+                $(".b1").clone(true).prependTo("#p2")
+            })
+        })
+    </script>
+</body>
+
+</html>
