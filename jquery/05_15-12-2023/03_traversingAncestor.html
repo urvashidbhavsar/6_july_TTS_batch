@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,
+        h1 {
+            border: 1px solid gray;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .change {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <button id="btn1">click </button>
+    <hr>
+
+    <div class="main">Main
+        <div class="subdiv">Subdiv
+            <div class="sub">Sub
+                <h1>Hello</h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // $("h1").parent().addClass("change")
+                // $("h1").parent(".sub").addClass("change")
+                // $("h1").parents().addClass("change")
+                $("h1").parentsUntil("body").addClass("change")
+            })
+        })
+    </script>
+</body>
+
+</html>

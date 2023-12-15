@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div2 {
+            height: 200px;
+            width: 250px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <div class="div1"></div>
+    <div class="div2"></div>
+
+    <script>
+        $(document).ready(function () {
+            $(".div1").height(100).width(100).css("border", "1px solid red").innerWidth(110).innerHeight(110)
+
+            $text = ""
+            $text = "Height : " + $(".div2").height() +
+                "<br>Width : " + $(".div2").width() +
+                "<br>innerHeight(padding) : " + $(".div2").innerHeight() +
+                "<br>innerWidth(padding) : " + $(".div2").innerWidth() +
+                "<br>outerHeight(border) : " + $(".div2").outerHeight() +
+                "<br>outerWidth(border) : " + $(".div2").outerWidth() +
+                "<br>outerHeight(margin) : " + $(".div2").outerHeight(true) +
+                "<br>outerWidth(margin) : " + $(".div2").outerWidth(true)
+            $(".div2").html($text)
+        })
+    </script>
+</body>
+
+</html>

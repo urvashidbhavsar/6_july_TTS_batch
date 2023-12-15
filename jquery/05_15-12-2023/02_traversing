@@ -1,0 +1,14 @@
+traversing means move through. it represent DOM tree.
+
+4 topics :
+(1) ancestor (like a parent)
+ => parent(), parents(), parentUntil() 
+
+(2) decendent (like a child)
+=> children(), find()
+
+(3) siblings (like a similar or same)
+=> siblings(), next(), nextAll(), nextUntil(), prev(), prevAll(), prevUntil()
+
+(4) filter (like a searching)
+=> filter(), first(), last(), eq(), not()

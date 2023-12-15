@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .setval {
+            border: 1px solid black;
+            padding: 10px;
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <button id="btn">click</button>
+
+    <p class="p1 mypara">paragraph 1</p>
+    <p class="p2 mypara">paragraph 2</p>
+    <p class="p3 mypara">paragraph 3</p>
+    <p class="p4 mypara">paragraph 4</p>
+    <p class="p5 mypara">paragraph 5</p>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                // $(".mypara").filter(".p1").addClass("setval")
+                // $(".mypara").first().addClass("setval")
+                // $(".mypara").last().addClass("setval")
+                // $(".mypara").eq(4).addClass("setval")
+                $(".mypara").not(".p3").addClass("setval")
+            })
+        })
+    </script>
+</body>
+
+</html>

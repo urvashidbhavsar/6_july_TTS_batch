@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            height: 50px;
+            width: 100%;
+            border: 1px solid black;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <button id="btn1">Click</button>
+    <hr>
+
+    <div class="div1 div">div 1</div>
+    <div class="div2 div">div 2</div>
+    <div class="div3 div">div 3</div>
+    <div class="div4 div">div 4</div>
+    <div class="div5 div">div 5</div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // $(".div1").siblings().css("border", "1px solid red")
+                // $(".div1").next().css("border", "1px solid red")
+                // $(".div1").nextAll().css("border", "1px solid red")
+                // $(".div1").nextUntil(".div4").css("border", "1px solid red")
+                // $(".div5").prev().css("border", "1px solid red")
+                // $(".div5").prevAll().css("border", "1px solid red")
+                $(".div5").prevUntil(".div1").css("border", "1px solid red")
+            })
+        })
+    </script>
+
+</body>
+
+</html>

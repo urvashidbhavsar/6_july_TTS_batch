@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: auto;
+            width: 300px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- remove functions are : remove(), empty() -->
+    <button id="btn1">empty</button>
+    <button id="btn2">remove</button>
+
+    <hr>
+    <div class="div1">
+        <h1>Hello world</h1>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("div").empty()
+            })
+            $("#btn2").click(function () {
+                $("div").remove()
+            })
+        })
+    </script>
+</body>
+
+</html>
