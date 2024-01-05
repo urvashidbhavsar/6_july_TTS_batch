@@ -1,0 +1,13 @@
+@media (max-width:576px) {
+    .topheader{
+        display: none;
+    }
+    .homepage-slider .banner{
+        padding: 50px 0;
+    }
+}
+@media (min-width:576px) {
+    .topheader{
+        display: block;
+    }
+}
