@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: rgb(1, 8, 8);
+}
+header a{
+    color: white;
+}
+header ul span{
+    color: darkcyan;
+}
+header a:hover{
+    color: darkcyan;
+}
+header .divide{
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+header .navbar{
+    background-color: rgb(1, 8, 8);
+}
+header .navbar a{
+    color: white !important;
+    text-transform: uppercase;
+    font-size: 13px !important;
+}
+header .navbar a:hover{
+    color: darkcyan !important;
+}
+header .dropdown-menu a{
+    color: black !important;
+}
+.navbar-toggler {
+    background-color: darkcyan;
+    color: white;
+    border-radius: 0;
+}
+.homepage-slider .banner1{
+    background: url(../images/banner1.jpg) no-repeat center;
+    background-size: cover;
+}
+.homepage-slider .banner2{
+    background: url(../images/banner2.jpg) no-repeat center;
+    background-size: cover;
+}
+.homepage-slider .banner3{
+    background: url(../images/banner3.jpg) no-repeat center;
+    background-size: cover;
+}
+.homepage-slider .banner4{
+    background: url(../images/banner4.jpg) no-repeat center;
+    background-size: cover;
+}
+.homepage-slider .banner{
+    padding: 130px 0;
+    position: relative;
+    z-index: 1;
+}
+ .btnMagenta{
+    background-color: rgb(157, 10, 76) !important;
+    color:white !important;
+}
+.homepage-slider .banner1::after, .banner2::after,.banner3::after,.banner4::after{
+    content: "";
+    position: absolute;
+    top :0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -1;
+}
+.AboutUs i{
+    color:rgb(7, 127, 127);
+}
+.AboutUs h5 a{
+    color: rgb(21, 21, 21);
+}
+.AboutUs h5 a:hover{
+    color: rgb(7, 127, 127);
+}
+.btnGreen{
+    padding: 10px 20px;
+    background-color: rgb(7, 127, 127);
+    border: 1px solid rgb(7, 127, 127);
+    color: white;
+    border-radius: 5px;
+}
+.btnWhite{
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid rgb(7, 127, 127);
+    color: rgb(7, 127, 127);
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+.btnWhite:hover{
+    color: white;
+    background-color: rgb(7, 127, 127);
+
+}
+footer a{
+    color: rgb(193, 192, 192);
+}
+footer a:hover{
+    color: white;
+}
+.faqbg{
+    background-image: url(https://img.freepik.com/premium-photo/pink-sunset-with-palm-trees-horizon_654523-31.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imagebg{
+    padding: 100px 0;
+}
+.imagebg h1{
+    text-shadow: 0px 0px 5px black;
+}
+.accordion-button::after {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUYDN9r9BvT19C5MCisfbQuan1iS13Dt6fmw&usqp=CAU)
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(https://icons.veryicon.com/png/o/education-technology/calculator/minus-sign-9.png);
+}
+ .loginpage input[type="password"],[type="text"] {
+    border: none;
+    border-bottom: 2px solid black !important;
+    border-radius: 0;
+}
+
+.loginpage input[type="password"]:focus,[type="text"]:focus {
+    box-shadow: none;
+}
+.searchval input[type="text"]{
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    border: 1px solid white !important;
+    border-bottom: 1px solid white !important;
+}
+.searchval input[type="text"]::placeholder{
+    color: white;
+}
